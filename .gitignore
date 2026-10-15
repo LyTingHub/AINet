@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+
+result/
+runs/
+runs2/
+ckpt*/
+config/log2/
+dataset/log2/
+
+*.pth
+*.pt
+analysis/

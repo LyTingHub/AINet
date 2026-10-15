@@ -5,10 +5,13 @@ title: "AINet: Adaptive Interaction Network for Human Motion Prediction During H
 authors:
   - family-names: Liu
     given-names: Mengyuan
+    affiliation: "State Key Laboratory of General Artificial Intelligence and Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University, Shenzhen Graduate School"
   - family-names: Lin
     given-names: Yangting
+    affiliation: "State Key Laboratory of General Artificial Intelligence and Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University, Shenzhen Graduate School"
   - family-names: Cui
     given-names: Qiongjie
+    affiliation: "National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi'an Jiaotong University"
 repository-code: "https://github.com/LyTingHub/AINet"
 url: "https://arxiv.org/abs/2610.16624"
 preferred-citation:
@@ -17,10 +20,13 @@ preferred-citation:
   authors:
     - family-names: Liu
       given-names: Mengyuan
+      affiliation: "State Key Laboratory of General Artificial Intelligence and Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University, Shenzhen Graduate School"
     - family-names: Lin
       given-names: Yangting
+      affiliation: "State Key Laboratory of General Artificial Intelligence and Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University, Shenzhen Graduate School"
     - family-names: Cui
       given-names: Qiongjie
+      affiliation: "National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi'an Jiaotong University"
   journal: "IEEE Transactions on Image Processing"
   year: 2026
   volume: 35

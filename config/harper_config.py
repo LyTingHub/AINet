@@ -16,7 +16,11 @@ C.print_coe = False
 C.save_pred_gt = False
 C.save_mpjpe = False
 C.seed = 888
+C.dataset = 'harper'
+C.model_variant = 'harper'
 C.n_joint = 44
+C.human_joint = 21
+C.robot_joint = 23
 C.print_loss = 400
 """please config ROOT_dir and user when u first using"""
 C.abs_dir = osp.dirname(osp.realpath(__file__))
@@ -50,6 +54,10 @@ C.motion.harper_input_length = 60
 C.motion.harper_input_length_dct = 60
 C.motion.harper_target_length_train = 10
 C.motion.harper_target_length_eval = 30
+C.motion.input_length = C.motion.harper_input_length
+C.motion.input_length_dct = C.motion.harper_input_length_dct
+C.motion.target_length_train = C.motion.harper_target_length_train
+C.motion.target_length_eval = C.motion.harper_target_length_eval
 C.motion.dim1 = 63
 C.motion.dim2 = 69
 
