@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the published AINet paper."
+type: software
+title: "AINet: Adaptive Interaction Network for Human Motion Prediction During Human-Robot Collaboration"
+authors:
+  - family-names: Liu
+    given-names: Mengyuan
+  - family-names: Lin
+    given-names: Yangting
+  - family-names: Cui
+    given-names: Qiongjie
+repository-code: "https://github.com/LyTingHub/AINet"
+url: "https://arxiv.org/abs/2610.16624"
+preferred-citation:
+  type: article
+  title: "Adaptive Interaction Network for Human Motion Prediction During Human-Robot Collaboration"
+  authors:
+    - family-names: Liu
+      given-names: Mengyuan
+    - family-names: Lin
+      given-names: Yangting
+    - family-names: Cui
+      given-names: Qiongjie
+  journal: "IEEE Transactions on Image Processing"
+  year: 2026
+  volume: 35
+  start: 8484
+  end: 8496
+  doi: "10.1109/TIP.2026.3718431"
+  url: "https://doi.org/10.1109/TIP.2026.3718431"
