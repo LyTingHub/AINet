@@ -12,3 +12,8 @@ dataset/log2/
 *.pth
 *.pt
 analysis/
+
+# Keep the released paper checkpoints under version control.
+!checkpoints/
+!checkpoints/**/
+!checkpoints/**/*.pth

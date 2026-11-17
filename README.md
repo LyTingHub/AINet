@@ -107,22 +107,32 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
 
 Checkpoints are saved to `config/log2/snapshot*/model/`. TensorBoard logs are written to the same snapshot directory.
 
+## Pretrained Checkpoints
+
+The checkpoints used to reproduce the paper results are included in this repository. All three models were evaluated at iteration 31,000.
+
+| Dataset | Checkpoint | SHA256 | Paper MPJPE (mm) |
+| --- | --- | --- | --- |
+| HARPER | [`checkpoints/harper/model-iter-31000.pth`](checkpoints/harper/model-iter-31000.pth) | `4FDC6D2808E130C6368D41F333AEAC249F64232DD536B81848626B6BE5E0E7A0` | 47.71 |
+| CoMaD | [`checkpoints/comad/model-iter-31000.pth`](checkpoints/comad/model-iter-31000.pth) | `5C623CFC3874A1AC77C28135ED06DB7758B58AABC808A9EB726D72ED4C759EFB` | 27.30 |
+| CHICO | [`checkpoints/chico/model-iter-31000.pth`](checkpoints/chico/model-iter-31000.pth) | `EF08DF349129492E258D138BBF4E7CD031AA4D1A667859E16453E2BC50C578FE` | 49.35 |
+
 ## Testing
 
 Evaluate the full test split:
 
 ```bash
-python test.py --dataset harper --data-root ./data/harper_3d_30 --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth
-python test.py --dataset comad --data-root ./data/comad_only_3d_skeleton --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth
-python test.py --dataset chico --data-root ./data/CHICO/poses --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth
+python test.py --dataset harper --data-root ./data/harper_3d_30 --model-pth checkpoints/harper/model-iter-31000.pth
+python test.py --dataset comad --data-root ./data/comad_only_3d_skeleton --model-pth checkpoints/comad/model-iter-31000.pth
+python test.py --dataset chico --data-root ./data/CHICO/poses --model-pth checkpoints/chico/model-iter-31000.pth
 ```
 
 Evaluate each action/subtask separately:
 
 ```bash
-python test.py --dataset harper --data-root ./data/harper_3d_30 --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth --action-wise --output HARPER_actionwise.txt
-python test.py --dataset comad --data-root ./data/comad_only_3d_skeleton --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth --action-wise --output COMAD_actionwise.txt
-python test.py --dataset chico --data-root ./data/CHICO/poses --model-pth config/log2/snapshotXXXX/model/model-iter-31000.pth --action-wise --output CHICO_actionwise.txt
+python test.py --dataset harper --data-root ./data/harper_3d_30 --model-pth checkpoints/harper/model-iter-31000.pth --action-wise --output HARPER_actionwise.txt
+python test.py --dataset comad --data-root ./data/comad_only_3d_skeleton --model-pth checkpoints/comad/model-iter-31000.pth --action-wise --output COMAD_actionwise.txt
+python test.py --dataset chico --data-root ./data/CHICO/poses --model-pth checkpoints/chico/model-iter-31000.pth --action-wise --output CHICO_actionwise.txt
 ```
 
 ## Code Layout
